@@ -1726,12 +1726,12 @@ hr {
 
 .button-default:hover, .button-default:active {
 	color: #ffffff;
-	background-color: #3c6a36;
-	border-color: #3c6a36;
+	background-color: #989c97;
+	border-color: #989c97;
 }
 
 .button-default.button-ujarak::before {
-	background: #3c6a36;
+	background: #989c97;
 }
 
 .button-default.button-pipaluk, .button-default.button-pipaluk:focus {
@@ -1740,15 +1740,15 @@ hr {
 
 .button-default.button-pipaluk::before, .button-default.button-pipaluk:focus::before {
 	background: #222120;
-	border-color: #3c6a36;
+	border-color: #989c97;
 }
 
 .button-default.button-pipaluk::after, .button-default.button-pipaluk:focus::after {
-	border-color: #3c6a36;
+	border-color: #989c97;
 }
 
 .button-default.button-pipaluk:hover, .button-default.button-pipaluk:active {
-	color: #3c6a36;
+	color: #989c97;
 	background: transparent;
 }
 
@@ -1762,18 +1762,18 @@ hr {
 }
 
 .button-default.button-wapasha::after, .button-default.button-wapasha:focus::after {
-	border-color: #3c6a36;
+	border-color: #989c97;
 }
 
 .button-default.button-wapasha:hover, .button-default.button-wapasha:active {
-	color: #3c6a36;
+	color: #989c97;
 	background: transparent;
 }
 
 .button-primary, .button-primary:focus {
 	color: #ffffff;
-	background-color: #3c6a36;
-	border-color: #3c6a36;
+	background-color: #989c97;
+	border-color: #989c97;
 }
 
 .button-primary:hover, .button-primary:active {
@@ -1791,7 +1791,7 @@ hr {
 }
 
 .button-primary.button-pipaluk::before, .button-primary.button-pipaluk:focus::before {
-	background: #3c6a36;
+	background: #989c97;
 	border-color: #151515;
 }
 
@@ -1805,12 +1805,12 @@ hr {
 }
 
 .button-primary.button-wapasha, .button-primary.button-wapasha:focus {
-	color: #3c6a36;
+	color: #989c97;
 	background: transparent;
 }
 
 .button-primary.button-wapasha::before, .button-primary.button-wapasha:focus::before {
-	border-color: #3c6a36;
+	border-color: #989c97;
 }
 
 .button-primary.button-wapasha::after, .button-primary.button-wapasha:focus::after {
@@ -6789,7 +6789,7 @@ html:not(.lt-ie10) .not-animated {
 	font-size: 20px;
 	line-height: 38px;
 	color: #ffffff;
-	background: #3c6a36;
+	background: #494949;
 	overflow: hidden;
 	text-align: center;
 	text-decoration: none;
@@ -12323,7 +12323,7 @@ ul.posts {
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
-			-ms-flex: 1;
+		
 		}
 
 			ul.posts article header h3 {
@@ -12344,3 +12344,24 @@ ul.posts {
 			ul.posts article header > :last-child {
 				margin-bottom: 0;
 			}
+
+			
+
+
+
+			.img-hover-zoom {
+				height: 480px; /* [1.1] Set it as per your need */
+				overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+			  }
+			  
+			  /* [2] Transition property for smooth transformation of images */
+			  .img-hover-zoom img {
+				transition: transform .5s ease;
+			  }
+			  
+			  /* [3] Finally, transforming the image when container gets hovered */
+			  .img-hover-zoom:hover img {
+				transform: scale(1.5);
+			  }
+
+		
