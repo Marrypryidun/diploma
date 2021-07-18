@@ -12,6 +12,6 @@ func initializeRoutes() {
 	router.GET("/", showIndexPage)
 }
 
-func showIndexPage(c * gin.Context) {
+func showIndexPage(c *gin.Context) {
 	c.HTML(http.StatusOK, "index.html", nil)
 }

@@ -1,8 +1,9 @@
 package main
 
-import "github.com/gin-gonic/gin"
-
-
+import (
+	"github.com/gin-gonic/gin"
+	"time"
+)
 
 func main() {
 	gin.SetMode(gin.ReleaseMode)
@@ -12,6 +13,7 @@ func main() {
 	router.Static("/js", "./templates/js")
 	router.Static("/fronts", "./templates/fronts")
 	router.Static("/images", "./templates/images")
+	time.Sleep(time.Second)
 	initializeRoutes()
 	router.Run()
 }
