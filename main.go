@@ -29,6 +29,6 @@ func main() {
 	router.LoadHTMLGlob("templates/site/*")
 
 	initializeRoutes()
-	http.ListenAndServe(":8000", router)
+	http.ListenAndServe(":8004", router)
 	//router.Run()
 }
