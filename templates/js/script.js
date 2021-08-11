@@ -1162,4 +1162,19 @@
 			multitoggles();
 		}
 	});
+	$('#rd-navbar-search-form-input').change(function() {
+		$.ajax({
+			url: '/ajax/product/search',
+			type: 'POST',
+			data: $('#rd-navbar-search-form-input').val(),
+			timeout: 15000,
+			success: function(result) {
+				console.log("eeeeeee")
+			},
+			error: function(result) {
+				console.log(result);
+			},
+		});
+	});
 }());
+

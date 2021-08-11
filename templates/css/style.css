@@ -9265,7 +9265,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .swiper-button-prev:before {
-	content: "\f14a";
+	content: url("../images/left-arrow.png");
 }
 
 .swiper-button-prev:hover::after {
@@ -9283,7 +9283,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .swiper-button-next:before {
-	content: "\f14f";
+	content: url("../images/right-arrow.png");
 }
 
 .swiper-button-next:hover::after {
