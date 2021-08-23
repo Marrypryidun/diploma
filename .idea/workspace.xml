@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69de7fcf-b795-4b9a-8f7b-b8b587a71ac0" name="Default Changelist" comment="add product img and fix path">
-      <change afterPath="$PROJECT_DIR$/models/product.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/js/product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/site/item-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/product.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages.go" beforeDir="false" afterPath="$PROJECT_DIR$/pages.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/images/bg-breadcrumbs.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/images/bg-breadcrumbs.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/site/body-visualizer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site/body-visualizer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/site/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site/contact-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/site/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/site/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/site/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site/typography.html" afterDir="false" />
-    </list>
+    <list default="true" id="69de7fcf-b795-4b9a-8f7b-b8b587a71ac0" name="Default Changelist" comment="add product img and fix path" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
