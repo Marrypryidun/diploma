@@ -27,8 +27,8 @@ func main() {
 	router.Static("/fronts", "./templates/fonts")
 	router.Static("/images", "./templates/images")
 	router.LoadHTMLGlob("templates/site/*")
-
 	initializeRoutes()
+	//dao.GetAllProducts()
 	http.ListenAndServe(":8004", router)
 	//router.Run()
 }

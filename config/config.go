@@ -9,6 +9,7 @@ import (
 type Configuration struct {
 	port    string `json:"port"`
 	mgAddrs string `json:"mgAddrs"`
+	dbName  string `json:"dbName"`
 }
 
 // Config shares the global configuration
@@ -33,9 +34,16 @@ func LoadConfig() error {
 
 	return nil
 }
-func (c *Configuration)MgAddrs() string {
-	if c.mgAddrs!=""{
+func (c *Configuration) MgAddrs() string {
+	if c.mgAddrs != "" {
 		return c.mgAddrs
 	}
 	return "mongodb://127.0.0.1"
+}
+
+func (c *Configuration) MgDbName() string {
+	if c.mgAddrs != "" {
+		return c.dbName
+	}
+	return "Diplom"
 }

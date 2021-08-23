@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69de7fcf-b795-4b9a-8f7b-b8b587a71ac0" name="Default Changelist" comment="add product img and fix path">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/images/left-arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/product.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/js/product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/site/item-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/product.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages.go" beforeDir="false" afterPath="$PROJECT_DIR$/pages.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/bg-breadcrumbs.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/images/bg-breadcrumbs.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/body-visualizer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site/body-visualizer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site/contact-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/site/typography.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
@@ -25,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="lya_news" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,11 +59,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -59,6 +73,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Maria\go\src\diplom\templates\js" />
       <recent name="C:\Users\Maria\go\src\diplom" />
       <recent name="C:\Users\Maria\go\src\diplom\templates\site" />
     </key>
@@ -117,7 +132,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="Marry_main_page" />
                       </list>
                     </value>
                   </entry>
@@ -138,5 +153,21 @@
     <MESSAGE value="refresh branch" />
     <MESSAGE value="add product img and fix path" />
     <option name="LAST_COMMIT_MESSAGE" value="add product img and fix path" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/config/config.go</url>
+          <line>31</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/config/config.go</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
