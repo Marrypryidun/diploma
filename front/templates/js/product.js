@@ -17,7 +17,9 @@
                     errorSearch();
                     return
                 }
-               // $('#products').tplAppend("item-product", null)
+                for (let value of result.products) {
+
+                }
                 console.log(result)
             },
             error: function(err) {

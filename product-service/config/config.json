@@ -1,5 +1,5 @@
 {
-  "port": ":8809",
+  "port": ":8010",
   "mgAddrs": "mongodb://127.0.0.1",
   "dbName": "Diplom"
 }
