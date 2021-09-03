@@ -9,6 +9,7 @@ import (
 type Configuration struct {
 	port    string `json:"port"`
 	mgAddrs string `json:"mgAddrs"`
+	dbName  string `json:"dbName"`
 }
 
 // Config shares the global configuration
@@ -19,7 +20,7 @@ var (
 // LoadConfig loads configuration from the config file
 func LoadConfig() error {
 	// Filename is the path to the json config file
-	file, err := os.Open("config/config.json")
+	file, err := os.Open("product-service/config/config.json")
 	if err != nil {
 		return err
 	}
@@ -33,9 +34,23 @@ func LoadConfig() error {
 
 	return nil
 }
-func (c *Configuration)MgAddrs() string {
-	if c.mgAddrs!=""{
+func (c *Configuration) MgAddrs() string {
+	if c.mgAddrs != "" {
 		return c.mgAddrs
 	}
 	return "mongodb://127.0.0.1"
+}
+
+func (c *Configuration) MgDbName() string {
+	if c.mgAddrs != "" {
+		return c.dbName
+	}
+	return "Diplom"
+}
+
+func (c *Configuration) Port() string {
+	if c.port != "" {
+		return c.port
+	}
+	return ":8010"
 }

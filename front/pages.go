@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	"diplom/front/controlers"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -16,7 +16,8 @@ func initializeRoutes() {
 	router.GET("/news.html", showNewsPage)
 	router.GET("/contact-us.html", showContactUsPage)
 	router.GET("body-visualizer.html", showBodyVisualizer)
-	router.POST("/ajax/product/search", showBodyVisualizer)
+	router.GET("product.html", showProductPage)
+	router.POST("/ajax/product/search", controlers.ProductModule.SearchProduct)
 }
 
 func showIndexPage(c *gin.Context) {
@@ -38,7 +39,6 @@ func showBodyVisualizer(c *gin.Context) {
 	c.HTML(http.StatusOK, "body-visualizer.html", nil)
 }
 
-func searchProduct(c *gin.Context)  {
-	fmt.Println(c.GetRawData())
-	c.Status(http.StatusOK)
+func showProductPage(c *gin.Context) {
+	c.HTML(http.StatusOK, "product.html", nil)
 }

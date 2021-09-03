@@ -1,12 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69de7fcf-b795-4b9a-8f7b-b8b587a71ac0" name="Default Changelist" comment="add product img and fix path">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/images/left-arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="69de7fcf-b795-4b9a-8f7b-b8b587a71ac0" name="Default Changelist" comment="save">
+      <change afterPath="$PROJECT_DIR$/front/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/config/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/controlers/product.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/utils/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/controllers/product.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/models/product.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/config/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/dao/product.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databases/databases.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/databases/databases.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/front/models/product.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages.go" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/css/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/Linearicons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/Linearicons.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/Linearicons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/Linearicons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/Linearicons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/Linearicons.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/Linearicons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/Linearicons.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/Mangaba.otf" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/Mangaba.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/Mangaba.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/Mangaba.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/MaterialIcons-Regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/MaterialIcons-Regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/MaterialIcons-Regular.ijmap" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/MaterialIcons-Regular.ijmap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/MaterialIcons-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/MaterialIcons-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/MaterialIcons-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/MaterialIcons-Regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/MaterialIcons-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/MaterialIcons-Regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/fl-bigmug-line.eot" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/fl-bigmug-line.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/fl-bigmug-line.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/fl-bigmug-line.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/fl-bigmug-line.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/fl-bigmug-line.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/fl-bigmug-line.woff" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/fl-bigmug-line.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/lg.eot" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/lg.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/lg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/lg.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/lg.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/lg.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/lg.woff" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/lg.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/materialdesignicons-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/materialdesignicons-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/materialdesignicons-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/materialdesignicons-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/materialdesignicons-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/materialdesignicons-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/materialdesignicons-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fonts/materialdesignicons-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/@charlotteslawrence-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/@charlotteslawrence-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/_blank.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/_blank.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/about-1-519x446.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/about-1-519x446.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/ajax-loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/ajax-loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/apple-alt-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/apple-alt-solid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/banner/background-03-1920x310.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/banner/background-03-1920x310.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/banner/background-03-3840x620.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/banner/background-03-3840x620.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/banner/background-04-1920x60.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/banner/background-04-1920x60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/banner/background-04-3840x120.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/banner/background-04-3840x120.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/banner/foreground-03-1600x310.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/banner/foreground-03-1600x310.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/banner/foreground-03-3200x620.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/banner/foreground-03-3200x620.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/banner/foreground-04-1600x60.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/banner/foreground-04-1600x60.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/banner/foreground-04-3200x120.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/banner/foreground-04-3200x120.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/bg-breadcrumbs.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/bg-breadcrumbs.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/bg-brush.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/bg-brush.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/bg-parallax-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/bg-parallax-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/bg-parallax-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/bg-parallax-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/bg-pattern-boxed.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/bg-pattern-boxed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/bg-top-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/bg-top-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/bg-top.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/bg-top.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/clients-1-270x145.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/clients-1-270x145.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/clients-2-270x145.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/clients-2-270x145.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/clients-3-270x145.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/clients-3-270x145.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/clients-4-270x145.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/clients-4-270x145.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/diet.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/diet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-image-1-129x120.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-image-1-129x120.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-image-2-129x120.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-image-2-129x120.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-image-3-129x120.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-image-3-129x120.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-image-4-129x120.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-image-4-129x120.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-original-1-1200x800.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-original-1-1200x800.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-original-10-1200x800.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-original-10-1200x800.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-original-11-800x1200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-original-11-800x1200.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-original-2-1200x800.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-original-2-1200x800.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-original-3-800x1200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-original-3-800x1200.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-original-4-800x1200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-original-4-800x1200.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-original-5-800x1200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-original-5-800x1200.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-original-6-1200x800.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-original-6-1200x800.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-original-7-800x1200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-original-7-800x1200.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-original-8-1200x800.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-original-8-1200x800.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gallery-original-9-800x1200.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gallery-original-9-800x1200.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gmap_marker.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gmap_marker.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/gmap_marker_active.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/gmap_marker_active.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/grid-gallery-1-370x303.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/grid-gallery-1-370x303.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/grid-gallery-2-370x303.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/grid-gallery-2-370x303.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/grid-gallery-3-370x303.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/grid-gallery-3-370x303.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/grid-gallery-4-370x303.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/grid-gallery-4-370x303.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/grid-gallery-5-370x303.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/grid-gallery-5-370x303.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/grid-gallery-6-370x303.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/grid-gallery-6-370x303.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/home-banner-1-570x715.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/home-banner-1-570x715.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/home-sidebar-394x255.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/home-sidebar-394x255.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/ie8-panel/warning_bar_0000_us.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/ie8-panel/warning_bar_0000_us.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/isotope-loader.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/isotope-loader.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/left-arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/left-arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/logo-default-196x47.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/logo-default-196x47.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/logo-inverse-196x42.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/logo-inverse-196x42.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/mCSB_buttons.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/mCSB_buttons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/mental.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/mental.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/preloader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/preloader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/preloader.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/preloader.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/product-5-270x280.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/product-5-270x280.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/product-6-270x280.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/product-6-270x280.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/product-7-270x280.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/product-7-270x280.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/product-8-270x280.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/product-8-270x280.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/product-mini-1-108x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/product-mini-1-108x100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/product-mini-2-108x100.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/product-mini-2-108x100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/products.jfif" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/products.jfif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/project-1-420x308.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/project-1-420x308.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/project-2-420x308.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/project-2-420x308.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/project-3-420x308.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/project-3-420x308.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/project-4-420x308.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/project-4-420x308.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/project-5-420x308.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/project-5-420x308.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/quote-jean.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/quote-jean.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/right-arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/right-arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/slider-1-1920x729.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/slider-1-1920x729.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/slider-2-1920x729.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/slider-2-1920x729.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/slider-3-1920x729.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/slider-3-1920x729.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/sport.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/sport.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/sunset.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/sunset.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/team-1-370x406.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/team-1-370x406.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/team-2-370x406.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/team-2-370x406.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/team-3-370x406.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/team-3-370x406.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/user-16-100x100.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/user-16-100x100.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/user-17-100x100.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/user-17-100x100.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/user-18-100x100.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/user-18-100x100.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/video-play.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/video-play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/vimeo-play.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/vimeo-play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/images/youtube-play.png" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/images/youtube-play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/core.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/js/core.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/html5shiv.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/js/html5shiv.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/iframe.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/js/iframe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/pointer-events.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/js/pointer-events.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/js/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/site/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/body-visualizer.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/site/body-visualizer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/site/contact-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/item-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/site/item-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/site/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/post1.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/site/post1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/site/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/site/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/site/typography.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +164,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Go File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
@@ -25,7 +174,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="lya_news" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,11 +196,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/product-service" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -59,23 +210,36 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Maria\go\src\diplom\product-service" />
+      <recent name="C:\Users\Maria\go\src\diplom\templates\js" />
       <recent name="C:\Users\Maria\go\src\diplom" />
       <recent name="C:\Users\Maria\go\src\diplom\templates\site" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Maria\go\src\diplom\front" />
+      <recent name="C:\Users\Maria\go\src\diplom" />
+      <recent name="C:\Users\Maria\go\src\diplom\templates" />
       <recent name="C:\Users\Maria\go\src\diplom\databases" />
       <recent name="C:\Users\Maria\go\src\diplom\templates\site" />
-      <recent name="C:\Users\Maria\go\src\diplom\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build diplom">
-    <configuration name="go build diplom" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build diplom/front">
+    <configuration name="go build diplom/front" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="diplom" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="diplom" />
+      <package value="diplom/front" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build diplom/product-service" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="diplom" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="diplom/product-service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/product-service/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build diplomdr" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -88,17 +252,28 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="diplom" />
+      <working_directory value="$PROJECT_DIR$/front/" />
+      <kind value="FILE" />
+      <package value="diplom/front" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/front/main.go" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build diplomdr" />
-      <item itemvalue="Go Build.go build diplom" />
+      <item itemvalue="Go Build.go build diplom/front" />
+      <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build diplom/product-service" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build diplom" />
-        <item itemvalue="Go Build.go build diplom" />
-        <item itemvalue="Go Build.go build diplom" />
-        <item itemvalue="Go Build.go build diplom" />
-        <item itemvalue="Go Build.go build diplom" />
+        <item itemvalue="Go Build.go build diplom/front" />
+        <item itemvalue="Go Build.go build diplom/product-service" />
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build diplom/front" />
+        <item itemvalue="Go Build.go build diplom/front" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +292,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="Marry_main_page" />
                       </list>
                     </value>
                   </entry>
@@ -137,6 +312,28 @@
     <MESSAGE value="fix path" />
     <MESSAGE value="refresh branch" />
     <MESSAGE value="add product img and fix path" />
-    <option name="LAST_COMMIT_MESSAGE" value="add product img and fix path" />
+    <MESSAGE value="save" />
+    <option name="LAST_COMMIT_MESSAGE" value="save" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/front/config/config.go</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/front/config/config.go</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoApplicationRunConfiguration">
+        <watch expression="config.Config.Port()" language="go" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
