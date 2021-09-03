@@ -1,8 +1,9 @@
 package main
 
 import (
-	"diplom/config"
-	"diplom/databases"
+	"diplom/product-service/config"
+	"diplom/product-service/controllers"
+	"diplom/product-service/databases"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
@@ -20,15 +21,10 @@ func main() {
 	}
 	defer databases.Database.Close()
 
-	gin.SetMode(gin.ReleaseMode)
-	router = gin.New()
-	router.Static("/css", "./templates/css")
-	router.Static("/js", "./templates/js")
-	router.Static("/fronts", "./templates/fonts")
-	router.Static("/images", "./templates/images")
-	router.LoadHTMLGlob("templates/site/*")
-	initializeRoutes()
+	controllers.Router = gin.New()
+	controllers.ProductModule.InitializeRoutes()
+	controllers.ProductModule.LoadCache()
 	//dao.GetAllProducts()
-	http.ListenAndServe(":8004", router)
+	http.ListenAndServe(config.Config.Port(), controllers.Router)
 	//router.Run()
 }

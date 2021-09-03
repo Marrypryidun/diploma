@@ -20,7 +20,7 @@ var (
 // LoadConfig loads configuration from the config file
 func LoadConfig() error {
 	// Filename is the path to the json config file
-	file, err := os.Open("config/config.json")
+	file, err := os.Open("product-service/config/config.json")
 	if err != nil {
 		return err
 	}
@@ -46,4 +46,11 @@ func (c *Configuration) MgDbName() string {
 		return c.dbName
 	}
 	return "Diplom"
+}
+
+func (c *Configuration) Port() string {
+	if c.port != "" {
+		return c.port
+	}
+	return ":8010"
 }

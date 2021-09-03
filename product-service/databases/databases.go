@@ -1,7 +1,7 @@
 package databases
 
 import (
-	"diplom/config"
+	"diplom/product-service/config"
 	"fmt"
 	"gopkg.in/mgo.v2"
 )
