@@ -28,7 +28,7 @@ func (m *ProductModuleStruct) SearchProduct(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, obj{"error": err})
 		return
 	}
-	data.Number = 4
+	data.Number = 3
 	answerByte, ok := utils.RequestToAPI(http.MethodPost, m.serviceUrl+"/getProductsByName", data)
 	if !ok {
 		fmt.Println("product.go -> SearchProduct() -> utils.RequestToAPI() err request to product service.")

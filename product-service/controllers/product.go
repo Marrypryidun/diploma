@@ -47,7 +47,6 @@ func (m *ProductModuleStruct) getProductsByNameHandler(c *gin.Context) {
 
 	products := m.getProductByNameFromCache(inputData)
 	c.JSON(http.StatusOK, products)
-	return
 }
 
 func (m *ProductModuleStruct) getProductByNameFromCache(search models.ProductSearch) []models.Product {

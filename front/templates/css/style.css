@@ -7413,7 +7413,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-navbar-search-toggle span::before {
-	content: "";
+	content: url("../images/icons8-search-24.png");
 	transform: rotate(0deg) scale(1);
 	opacity: 1;
 	visibility: visible;
@@ -7421,7 +7421,7 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static .rd-navbar-search-toggle span::after {
-	content: "";
+	content: url("../images/icons8-search-24.png");
 	transform: rotate(-90deg) scale(0.4);
 	opacity: 0;
 	visibility: hidden;

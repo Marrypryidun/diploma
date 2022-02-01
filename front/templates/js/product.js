@@ -2,11 +2,11 @@
 (function () {
     $('.form').submit(function(e) {
         e.preventDefault(); // avoid to execute the actual submit of the form.
-
-        var form = $(this);
-        var url = form.attr('action');
-        var productName=$("#searchProduct").val()
-        var searchObj = {"product":productName}
+        $('.product-item').remove()
+        let form = $(this);
+        let url = form.attr('action');
+        let productName=$("#searchProduct").val()
+        let searchObj = {"product":productName}
         $.ajax({
             url: url,
             type: 'POST',
@@ -18,12 +18,10 @@
                     return
                 }
                 for (let value of result.products) {
-
+                    $('#products').append('<div class="col-md-4 card mb-4 box-shadow product-item"><h4>'+ value.name +'</h4><p>Protein:'+value.nutrition.protein+'</p><p>Fat:'+value.nutrition.fat+'</p><p>Energy:'+value.nutrition.energy+'</p></div>')
                 }
-                console.log(result)
             },
             error: function(err) {
-                console.log(err);
                 errorSearch();
             },
         });
